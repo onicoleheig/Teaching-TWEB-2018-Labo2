@@ -24,7 +24,7 @@ Implement the issue detail page too.
 
 
 
-#### Step 1 - Set up your project
+### Step 1 - Set up your project
 
 Don't waste too much time on scaffolding the project consider using some boilerplate like [create-react-app](https://facebook.github.io/create-react-app/)
 
@@ -32,7 +32,7 @@ Then, you'll need a tool that will help you implement a UI Component Design Syst
 
 
 
-#### Step 2 - Break The UI Into A Component Hierarchy
+### Step 2 - Break The UI Into A Component Hierarchy
 
 By analyzing Github's Issues page, you should be able to draw boxes around every components (and subcomponents). 
 
@@ -40,7 +40,7 @@ One such technique is the [single responsibility principle](https://en.wikipedia
 
 
 
-#### Step 3 - Build presentational components
+### Step 3 - Build presentational components
 
 Presentational components are only concerned with *how things look*. They have no dependencies on the rest of your app. **They receive data and callbacks exclusively via props**. 
 
@@ -50,7 +50,7 @@ Use storybook to build and document your components.
 
 
 
-#### Step 4 - Deploy your UI Components Design System
+### Step 4 - Deploy your UI Components Design System
 
 If you're using storybook, check out this link to learn how to export your storybook as a static App and deploy it somewhere (like Github Pages): https://storybook.js.org/basics/exporting-storybook/#deploying-to-github-pages
 
