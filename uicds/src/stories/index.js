@@ -1,11 +1,15 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
+/*
 import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
+import { linkTo } from '@storybook/addon-links';*/
 
-import { Button, Welcome } from '@storybook/react/demo';
+//import { Button, Welcome } from '@storybook/react/demo';
 
+import StatusIcon from '../components/StatusIcon';
+
+/*
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('Button', module)
@@ -17,3 +21,7 @@ storiesOf('Button', module)
       </span>
     </Button>
   ));
+*/
+
+storiesOf('StatusIcon', module)
+  .add('Example', () => <StatusIcon name="test"></StatusIcon>);
