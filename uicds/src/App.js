@@ -25,8 +25,5 @@ class App extends Component {
   }
 }
 
-function StatusIcon(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
 
-export default {App, StatusIcon};
+export default App;
