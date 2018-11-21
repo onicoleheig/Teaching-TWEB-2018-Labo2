@@ -10,15 +10,17 @@ import IssueTable from '../components/IssuesTable';
 import IssueStatusIcon from '../components/IssueStatusIcon';
 import IssueCommentNumber from '../components/IssueCommentNumber';
 
+let itemsList = [
+  {status:"opened", title:"The keyboard shows and hide when clicking on input in android/chrome", activity:"#14063 opened 36 minutes ago by Aykelith", nbComments:"10"},
+  {status:"closed", title:"The keyboard shows and hide when clicking on input in android/chrome", activity:"#14063 opened 36 minutes ago by Aykelith", nbComments:"44"},
+  {status:"opened", title:"The keyboard shows and hide when clicking on input in android/chrome", activity:"#14063 opened 36 minutes ago by Aykelith", nbComments:"45"},
+  {status:"closed", title:"The keyboard shows and hide when clicking on input in android/chrome", activity:"#14063 opened 36 minutes ago by Aykelith", nbComments:"0"},
+  {status:"closed", title:"The keyboard shows and hide when clicking on input in android/chrome", activity:"#14063 opened 36 minutes ago by Aykelith", nbComments:"62"}
+];
+
 storiesOf('IssueTable', module)
   .add('Example full', () => (
-    <IssueTable status="open" title="The keyboard shows and hide when clicking on input in android/chrome" activity="#14063 opened 36 minutes ago by Aykelith" nbComments="10"></IssueTable>
-  ))
-  .add('Example without comments', () => (
-    <IssueTable status="open" title="The keyboard shows and hide when clicking on input in android/chrome" activity="#14063 opened 36 minutes ago by Aykelith" nbComments="0"></IssueTable>
-  ))
-  .add('Example closed', () => (
-    <IssueTable status="closed" title="The keyboard shows and hide when clicking on input in android/chrome" activity="#14063 opened 36 minutes ago by Aykelith" nbComments="10"></IssueTable>
+    <IssueTable items={itemsList}></IssueTable>
   ))
   .add('Usage', () => <ReactMarkdown source="```<IssueTable status='open' title='The keyboard shows and hide when clicking on input in android/chrome' activity='#14063 opened 36 minutes ago by Aykelith' nbComments='10'></IssueTable>```" />);
 

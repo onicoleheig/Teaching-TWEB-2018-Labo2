@@ -5,14 +5,17 @@ import Table from '@material-ui/core/Table';
 import Issue from './Issue';
 
 function TableIssues(props) { 
+  const { items } = props;
   return(
     <Table>
-      <Issue
-        status = {props.status}
-        title = {props.title}
-        activity = {props.activity}
-        nbComments = {props.nbComments}
-      ></Issue>
+      {items.map(item => (
+        <Issue
+          status = {item.status}
+          title = {item.title}
+          activity = {item.activity}
+          nbComments = {item.nbComments}
+        ></Issue>
+      ))}
     </Table>
   );
 }
